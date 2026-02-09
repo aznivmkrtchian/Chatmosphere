@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="270" id="KGk-i7-Jjw" customClass="MessageCell" customModule="FirebaseChatApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="574" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="574" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PWK-7Q-9zE">
+                        <rect key="frame" x="12" y="12" width="550" height="246"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwV-1j-wfr">
+                                <rect key="frame" x="0.0" y="103" width="40" height="40"/>
+                                <color key="backgroundColor" name="LightPink"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="cqQ-R7-Pmj"/>
+                                    <constraint firstAttribute="height" constant="40" id="v2N-7y-xzM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" name="BrandBurgundy"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0d-T5-V78">
+                                <rect key="frame" x="50" y="15.333333333333329" width="450" height="215.66666666666669"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dkv-Ev-B3y">
+                                        <rect key="frame" x="8" y="8" width="434" height="199.66666666666666"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="rE8-QL-gwH">
+                                                <rect key="frame" x="0.0" y="0.0" width="434" height="19.333333333333332"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jy3-ub-MP4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="39.666666666666664" height="19.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" name="BrandBurgundy"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYT-P1-8VW">
+                                                        <rect key="frame" x="369" y="0.0" width="65" height="19.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" name="BrandBurgundy"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZC6-MC-fZf">
+                                                <rect key="frame" x="0.0" y="24.333333333333329" width="434" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="BrandLightPurple"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="NAb-zf-POO">
+                                                <rect key="frame" x="0.0" y="49.666666666666657" width="434" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="vST-aY-Pzz"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="BrandBurgundy"/>
+                                <constraints>
+                                    <constraint firstItem="Dkv-Ev-B3y" firstAttribute="leading" secondItem="K0d-T5-V78" secondAttribute="leading" constant="8" id="05t-Nw-a3A"/>
+                                    <constraint firstItem="Dkv-Ev-B3y" firstAttribute="top" secondItem="K0d-T5-V78" secondAttribute="top" constant="8" id="KRa-Dj-POz"/>
+                                    <constraint firstItem="Dkv-Ev-B3y" firstAttribute="bottom" secondItem="K0d-T5-V78" secondAttribute="bottom" constant="-8" id="OdX-hP-sLz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dkv-Ev-B3y" secondAttribute="trailing" constant="8" id="eQc-xZ-kXI"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="56j-ig-UQI">
+                                <rect key="frame" x="510" y="103" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lfU-ym-Zp2"/>
+                                    <constraint firstAttribute="width" constant="40" id="vFp-Pn-CXt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PWK-7Q-9zE" secondAttribute="trailing" constant="12" id="252-Ft-M2r"/>
+                    <constraint firstItem="PWK-7Q-9zE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="OLd-xy-LTX"/>
+                    <constraint firstAttribute="bottom" secondItem="PWK-7Q-9zE" secondAttribute="bottom" constant="12" id="b6c-Md-F94"/>
+                    <constraint firstItem="PWK-7Q-9zE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="b8i-45-9ST"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="gYT-P1-8VW" id="ba9-jA-htC"/>
+                <outlet property="leftImageLabel" destination="EwV-1j-wfr" id="9fp-XW-dCE"/>
+                <outlet property="messageBubble" destination="K0d-T5-V78" id="F4T-Co-aXE"/>
+                <outlet property="messageImageHeightConstraint" destination="vST-aY-Pzz" id="Ibb-QW-iVk"/>
+                <outlet property="messageImageView" destination="NAb-zf-POO" id="05S-7q-rWn"/>
+                <outlet property="nameLabel" destination="Jy3-ub-MP4" id="DL0-Uv-qAl"/>
+                <outlet property="rightImageView" destination="56j-ig-UQI" id="9iL-r4-n06"/>
+                <outlet property="texttLabel" destination="ZC6-MC-fZf" id="txW-Kk-7hz"/>
+            </connections>
+            <point key="canvasLocation" x="-3503.8167938931297" y="-222.53521126760563"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="MeAvatar" width="36" height="36"/>
+        <namedColor name="BrandBurgundy">
+            <color red="0.40400001406669617" green="0.050999999046325684" blue="0.18400000035762787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandLightPurple">
+            <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightPink">
+            <color red="1" green="0.75686274509803919" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

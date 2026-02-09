@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="104" id="KGk-i7-Jjw" customClass="UserCell" customModule="FirebaseChatApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LRV-tS-3hf">
+                        <rect key="frame" x="16" y="8" width="308" height="88"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="076-On-LuG">
+                                <rect key="frame" x="0.0" y="23.666666666666668" width="276" height="40.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Nmae" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txj-4P-fUn" userLabel="nameLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="91.666666666666671" height="21.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <color key="textColor" name="BrandDarkPink"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MG-8x-R9U" userLabel="emailLabel">
+                                        <rect key="frame" x="0.0" y="23.666666666666671" width="35.333333333333336" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bye-3r-RLf" userLabel="unreadBadgeView">
+                                <rect key="frame" x="284" y="32" width="24" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgP-da-fub" userLabel="unreadbadgeLabel">
+                                        <rect key="frame" x="9.3333333333333144" y="5.0000000000000009" width="5.6666666666666679" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="2cw-Q3-SIM"/>
+                                    <constraint firstItem="XgP-da-fub" firstAttribute="centerX" secondItem="bye-3r-RLf" secondAttribute="centerX" id="HJp-nl-TpU"/>
+                                    <constraint firstItem="XgP-da-fub" firstAttribute="centerY" secondItem="bye-3r-RLf" secondAttribute="centerY" id="iI9-OJ-du0"/>
+                                    <constraint firstAttribute="height" constant="24" id="ziK-vh-tge"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LRV-tS-3hf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="2hM-AN-fmB"/>
+                    <constraint firstItem="LRV-tS-3hf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4b8-NH-ZO1"/>
+                    <constraint firstAttribute="bottom" secondItem="LRV-tS-3hf" secondAttribute="bottom" constant="8" id="g9U-YX-avN"/>
+                    <constraint firstAttribute="trailing" secondItem="LRV-tS-3hf" secondAttribute="trailing" constant="16" id="urs-36-97I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailLabel" destination="4MG-8x-R9U" id="UTc-y5-1Fg"/>
+                <outlet property="nameLabel" destination="txj-4P-fUn" id="3eP-yl-Kyd"/>
+                <outlet property="unreadBadgeLabel" destination="XgP-da-fub" id="PE5-YW-C4b"/>
+                <outlet property="unreadBadgeView" destination="bye-3r-RLf" id="3yb-HE-y7B"/>
+            </connections>
+            <point key="canvasLocation" x="-44.274809160305338" y="40.845070422535215"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BrandDarkPink">
+            <color red="0.6470588235294118" green="0.2196078431372549" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
