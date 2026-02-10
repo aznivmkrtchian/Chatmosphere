@@ -43,14 +43,15 @@ Chatmosphere is a real-time iOS chat application built with UIKit and Firebase, 
 ## 📱 Screenshots
 
 <p align="center">
-  <img src="Screenshots/register.png" width="150">
-  <img src="Screenshots/login.png" width="150">
-  <img src="Screenshots/users.png" width="150">
+  <img src="Screenshots/register.png" width="120">
+  <img src="Screenshots/login.png" width="120">
+  <img src="Screenshots/users.png" width="120">
 </p>
 
 <p align="center">
-  <img src="Screenshots/unread_messages.png" width="150">
-  <img src="Screenshots/chat.png" width="150">
+  <img src="Screenshots/unread_messages.png" width="120">
+  <img src="Screenshots/chat.png" width="120">
+  <img src="Screenshots/delete.png" width="120">
 </p>
 
 ## 🛠 Tech Stack
