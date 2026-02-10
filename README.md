@@ -43,14 +43,14 @@ Chatmosphere is a real-time iOS chat application built with UIKit and Firebase, 
 ## 📱 Screenshots
 
 <p align="center">
-  <img src="Screenshots/register.png" width="250">
-  <img src="Screenshots/login.png" width="250">
-  <img src="Screenshots/users.png" width="250">
+  <img src="Screenshots/register.png" width="150">
+  <img src="Screenshots/login.png" width="150">
+  <img src="Screenshots/users.png" width="150">
 </p>
 
 <p align="center">
-  <img src="Screenshots/unread_messages.png" width="250">
-  <img src="Screenshots/chat.png" width="250">
+  <img src="Screenshots/unread_messages.png" width="150">
+  <img src="Screenshots/chat.png" width="150">
 </p>
 
 ## 🛠 Tech Stack
@@ -62,7 +62,11 @@ Chatmosphere is a real-time iOS chat application built with UIKit and Firebase, 
 - IQKeyboardManager
 
 ## 🚀 Getting Started
-1. Clone the repository
-2. Install dependencies:
+- Clone the repository
+- Install dependencies:
    ```bash
    pod install
+- Add your own GoogleService-Info.plist
+- Open the .xcworkspace file
+- Run the app on a simulator or device
+
